@@ -1,0 +1,8 @@
+                Listado de vistas
+  Esquema  |        Nombre        | Tipo  | Dueño 
+-----------+----------------------+-------+-------
+ employees | current_dept_emp     | vista | juan
+ employees | dept_emp_latest_date | vista | juan
+ employees | v_full_employees     | vista | juan
+(3 filas)
+

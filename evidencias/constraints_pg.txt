@@ -1,0 +1,16 @@
+    tabla     |          conname          | contype | referencia  
+--------------+---------------------------+---------+-------------
+ departments  | departments_pkey          | p       | -
+ dept_emp     | dept_emp_pkey             | p       | -
+ dept_manager | dept_manager_pkey         | p       | -
+ employees    | employees_pkey            | p       | -
+ salaries     | salaries_pkey             | p       | -
+ titles       | titles_pkey               | p       | -
+ dept_emp     | dept_emp_emp_no_fkey      | f       | employees
+ dept_emp     | dept_emp_dept_no_fkey     | f       | departments
+ dept_manager | dept_manager_emp_no_fkey  | f       | employees
+ dept_manager | dept_manager_dept_no_fkey | f       | departments
+ salaries     | salaries_emp_no_fkey      | f       | employees
+ titles       | titles_emp_no_fkey        | f       | employees
+(12 filas)
+

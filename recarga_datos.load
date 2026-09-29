@@ -1,0 +1,12 @@
+LOAD DATABASE
+     FROM mysql://root:TU_PASSWORD@127.0.0.1:3306/employees
+     INTO postgresql://juan:TU_PASSWORD@127.0.0.1:5433/pdb_employees
+
+ WITH data only,
+      truncate,
+      create no tables,
+      create no indexes,
+      workers = 4, concurrency = 1
+
+ INCLUDING ONLY TABLE NAMES MATCHING 'departments', 'employees'
+;

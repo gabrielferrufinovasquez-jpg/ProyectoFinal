@@ -1,0 +1,10 @@
+ schemaname |   relname    | n_live_tup 
+------------+--------------+------------
+ employees  | departments  |          0
+ employees  | dept_emp     |          0
+ employees  | dept_manager |          0
+ employees  | employees    |          0
+ employees  | salaries     |          0
+ employees  | titles       |          0
+(6 filas)
+

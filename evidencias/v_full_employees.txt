@@ -1,0 +1,14 @@
+ emp_no |     full_name      |     dept_name      
+--------+--------------------+--------------------
+  10001 | Georgi Facello     | Development
+  10002 | Bezalel Simmel     | Sales
+  10003 | Parto Bamford      | Production
+  10004 | Chirstian Koblick  | Production
+  10005 | Kyoichi Maliniak   | Human Resources
+  10006 | Anneke Preusig     | Development
+  10007 | Tzvetan Zielinski  | Research
+  10008 | Saniya Kalloufi    | Development
+  10009 | Sumant Peac        | Quality Management
+  10010 | Duangkaew Piveteau | Production
+(10 filas)
+

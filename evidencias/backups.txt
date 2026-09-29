@@ -1,0 +1,2 @@
+165M -rw-r--r-- 1 jgabriel jgabriel 165M sep 28 19:17 employees_backup_mariadb.sql
+ 34M -rw-r--r-- 1 jgabriel jgabriel  34M sep 28 19:17 pdb_employees_backup.dump

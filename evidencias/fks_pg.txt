@@ -1,0 +1,4 @@
+ tabla | conname | referencia 
+-------+---------+------------
+(0 filas)
+

@@ -1,0 +1,240 @@
+2026-09-28T22:53:21.007996Z LOG pgloader version "3.6.10~devel"
+2026-09-28T22:53:21.011994Z LOG Data errors in '/tmp/pgloader/'
+2026-09-28T22:53:21.011994Z LOG Parsing commands from file #P"/home/jgabriel/EntregableFinal_JuanGabriel/recarga_datos.load"
+2026-09-28T22:53:21.115942Z LOG Migrating from #<MYSQL-CONNECTION mysql://root@127.0.0.1:3306/employees {1006A7D1B3}>
+2026-09-28T22:53:21.115942Z LOG Migrating into #<PGSQL-CONNECTION pgsql://juan@127.0.0.1:5433/pdb_employees {1006A7D363}>
+2026-09-28T22:53:21.399800Z WARNING Source column "employees"."employees"."gender" is casted to type #1=#S(PGLOADER.CATALOG:SQLTYPE
+                                                                       :NAME "employees_gender"
+                                                                       :SCHEMA #2=#S(PGLOADER.CATALOG:SCHEMA
+                                                                                     :SOURCE-NAME #3="employees"
+                                                                                     :NAME "employees"
+                                                                                     :CATALOG #S(PGLOADER.CATALOG:CATALOG
+                                                                                                 :NAME #3#
+                                                                                                 :SCHEMA-LIST (#2#)
+                                                                                                 :TYPES-WITHOUT-BTREE (("aclitem"
+                                                                                                                        . "hash")
+                                                                                                                       ("box"
+                                                                                                                        . "gist")
+                                                                                                                       ("cid"
+                                                                                                                        . "hash")
+                                                                                                                       ("circle"
+                                                                                                                        . "gist")
+                                                                                                                       ("point"
+                                                                                                                        . "gist")
+                                                                                                                       ("polygon"
+                                                                                                                        . "gist")
+                                                                                                                       ("xid"
+                                                                                                                        . "hash"))
+                                                                                                 :DISTRIBUTION-RULES NIL)
+                                                                                     :IN-SEARCH-PATH T
+                                                                                     :TABLE-LIST (#S(PGLOADER.CATALOG:TABLE
+                                                                                                     :SOURCE-NAME #4="departments"
+                                                                                                     :NAME "departments"
+                                                                                                     :SCHEMA #2#
+                                                                                                     :OID 24957
+                                                                                                     :COMMENT NIL
+                                                                                                     :STORAGE-PARAMETER-LIST NIL
+                                                                                                     :TABLESPACE NIL
+                                                                                                     :ROW-COUNT-ESTIMATE 9
+                                                                                                     :FIELD-LIST (#S(PGLOADER.SOURCE.MYSQL::MYSQL-COLUMN
+                                                                                                                     :TABLE-NAME #4#
+                                                                                                                     :NAME "dept_no"
+                                                                                                                     :DTYPE "char"
+                                                                                                                     :CTYPE "char(4)"
+                                                                                                                     :DEFAULT NIL
+                                                                                                                     :NULLABLE "NO"
+                                                                                                                     :EXTRA NIL
+                                                                                                                     :COMMENT NIL)
+                                                                                                                  #S(PGLOADER.SOURCE.MYSQL::MYSQL-COLUMN
+                                                                                                                     :TABLE-NAME "departments"
+                                                                                                                     :NAME "dept_name"
+                                                                                                                     :DTYPE "varchar"
+                                                                                                                     :CTYPE "varchar(40)"
+                                                                                                                     :DEFAULT NIL
+                                                                                                                     :NULLABLE "NO"
+                                                                                                                     :EXTRA NIL
+                                                                                                                     :COMMENT NIL))
+                                                                                                     :COLUMN-LIST (#S(PGLOADER.CATALOG:COLUMN
+                                                                                                                      :TABLE NIL
+                                                                                                                      :NAME "dept_no"
+                                                                                                                      :TYPE-NAME "char"
+                                                                                                                      :TYPE-MOD "(4)"
+                                                                                                                      :NULLABLE NIL
+                                                                                                                      :DEFAULT NIL
+                                                                                                                      :COMMENT NIL
+                                                                                                                      :TRANSFORM PGLOADER.TRANSFORMS::REMOVE-NULL-CHARACTERS
+                                                                                                                      :EXTRA NIL
+                                                                                                                      :TRANSFORM-DEFAULT T)
+                                                                                                                   #S(PGLOADER.CATALOG:COLUMN
+                                                                                                                      :TABLE NIL
+                                                                                                                      :NAME "dept_name"
+                                                                                                                      :TYPE-NAME #5="varchar"
+                                                                                                                      :TYPE-MOD "(40)"
+                                                                                                                      :NULLABLE NIL
+                                                                                                                      :DEFAULT NIL
+                                                                                                                      :COMMENT NIL
+                                                                                                                      :TRANSFORM PGLOADER.TRANSFORMS::REMOVE-NULL-CHARACTERS
+                                                                                                                      :EXTRA NIL
+                                                                                                                      :TRANSFORM-DEFAULT T))
+                                                                                                     :INDEX-LIST NIL
+                                                                                                     :FKEY-LIST NIL
+                                                                                                     :TRIGGER-LIST NIL
+                                                                                                     :CITUS-RULE NIL)
+                                                                                                  #S(PGLOADER.CATALOG:TABLE
+                                                                                                     :SOURCE-NAME #6="employees"
+                                                                                                     :NAME "employees"
+                                                                                                     :SCHEMA #2#
+                                                                                                     :OID 24976
+                                                                                                     :COMMENT NIL
+                                                                                                     :STORAGE-PARAMETER-LIST NIL
+                                                                                                     :TABLESPACE NIL
+                                                                                                     :ROW-COUNT-ESTIMATE 304415
+                                                                                                     :FIELD-LIST (#S(PGLOADER.SOURCE.MYSQL::MYSQL-COLUMN
+                                                                                                                     :TABLE-NAME #6#
+                                                                                                                     :NAME "emp_no"
+                                                                                                                     :DTYPE "int"
+                                                                                                                     :CTYPE "int(11)"
+                                                                                                                     :DEFAULT NIL
+                                                                                                                     :NULLABLE "NO"
+                                                                                                                     :EXTRA NIL
+                                                                                                                     :COMMENT NIL)
+                                                                                                                  #S(PGLOADER.SOURCE.MYSQL::MYSQL-COLUMN
+                                                                                                                     :TABLE-NAME "employees"
+                                                                                                                     :NAME "birth_date"
+                                                                                                                     :DTYPE "date"
+                                                                                                                     :CTYPE "date"
+                                                                                                                     :DEFAULT NIL
+                                                                                                                     :NULLABLE "NO"
+                                                                                                                     :EXTRA NIL
+                                                                                                                     :COMMENT NIL)
+                                                                                                                  #S(PGLOADER.SOURCE.MYSQL::MYSQL-COLUMN
+                                                                                                                     :TABLE-NAME "employees"
+                                                                                                                     :NAME "first_name"
+                                                                                                                     :DTYPE "varchar"
+                                                                                                                     :CTYPE "varchar(14)"
+                                                                                                                     :DEFAULT NIL
+                                                                                                                     :NULLABLE "NO"
+                                                                                                                     :EXTRA NIL
+                                                                                                                     :COMMENT NIL)
+                                                                                                                  #S(PGLOADER.SOURCE.MYSQL::MYSQL-COLUMN
+                                                                                                                     :TABLE-NAME "employees"
+                                                                                                                     :NAME "last_name"
+                                                                                                                     :DTYPE "varchar"
+                                                                                                                     :CTYPE "varchar(16)"
+                                                                                                                     :DEFAULT NIL
+                                                                                                                     :NULLABLE "NO"
+                                                                                                                     :EXTRA NIL
+                                                                                                                     :COMMENT NIL)
+                                                                                                                  #S(PGLOADER.SOURCE.MYSQL::MYSQL-COLUMN
+                                                                                                                     :TABLE-NAME "employees"
+                                                                                                                     :NAME "gender"
+                                                                                                                     :DTYPE "enum"
+                                                                                                                     :CTYPE #7="enum('M','F')"
+                                                                                                                     :DEFAULT NIL
+                                                                                                                     :NULLABLE "NO"
+                                                                                                                     :EXTRA NIL
+                                                                                                                     :COMMENT NIL)
+                                                                                                                  #S(PGLOADER.SOURCE.MYSQL::MYSQL-COLUMN
+                                                                                                                     :TABLE-NAME "employees"
+                                                                                                                     :NAME "hire_date"
+                                                                                                                     :DTYPE "date"
+                                                                                                                     :CTYPE "date"
+                                                                                                                     :DEFAULT NIL
+                                                                                                                     :NULLABLE "NO"
+                                                                                                                     :EXTRA NIL
+                                                                                                                     :COMMENT NIL))
+                                                                                                     :COLUMN-LIST (#S(PGLOADER.CATALOG:COLUMN
+                                                                                                                      :TABLE NIL
+                                                                                                                      :NAME "emp_no"
+                                                                                                                      :TYPE-NAME "bigint"
+                                                                                                                      :TYPE-MOD NIL
+                                                                                                                      :NULLABLE NIL
+                                                                                                                      :DEFAULT NIL
+                                                                                                                      :COMMENT NIL
+                                                                                                                      :TRANSFORM NIL
+                                                                                                                      :EXTRA NIL
+                                                                                                                      :TRANSFORM-DEFAULT T)
+                                                                                                                   #S(PGLOADER.CATALOG:COLUMN
+                                                                                                                      :TABLE NIL
+                                                                                                                      :NAME "birth_date"
+                                                                                                                      :TYPE-NAME #8="date"
+                                                                                                                      :TYPE-MOD NIL
+                                                                                                                      :NULLABLE NIL
+                                                                                                                      :DEFAULT NIL
+                                                                                                                      :COMMENT NIL
+                                                                                                                      :TRANSFORM NIL
+                                                                                                                      :EXTRA NIL
+                                                                                                                      :TRANSFORM-DEFAULT T)
+                                                                                                                   #S(PGLOADER.CATALOG:COLUMN
+                                                                                                                      :TABLE NIL
+                                                                                                                      :NAME "first_name"
+                                                                                                                      :TYPE-NAME #5#
+                                                                                                                      :TYPE-MOD "(14)"
+                                                                                                                      :NULLABLE NIL
+                                                                                                                      :DEFAULT NIL
+                                                                                                                      :COMMENT NIL
+                                                                                                                      :TRANSFORM PGLOADER.TRANSFORMS::REMOVE-NULL-CHARACTERS
+                                                                                                                      :EXTRA NIL
+                                                                                                                      :TRANSFORM-DEFAULT T)
+                                                                                                                   #S(PGLOADER.CATALOG:COLUMN
+                                                                                                                      :TABLE NIL
+                                                                                                                      :NAME "last_name"
+                                                                                                                      :TYPE-NAME #5#
+                                                                                                                      :TYPE-MOD "(16)"
+                                                                                                                      :NULLABLE NIL
+                                                                                                                      :DEFAULT NIL
+                                                                                                                      :COMMENT NIL
+                                                                                                                      :TRANSFORM PGLOADER.TRANSFORMS::REMOVE-NULL-CHARACTERS
+                                                                                                                      :EXTRA NIL
+                                                                                                                      :TRANSFORM-DEFAULT T)
+                                                                                                                   #S(PGLOADER.CATALOG:COLUMN
+                                                                                                                      :TABLE NIL
+                                                                                                                      :NAME "gender"
+                                                                                                                      :TYPE-NAME #1#
+                                                                                                                      :TYPE-MOD NIL
+                                                                                                                      :NULLABLE NIL
+                                                                                                                      :DEFAULT NIL
+                                                                                                                      :COMMENT NIL
+                                                                                                                      :TRANSFORM NIL
+                                                                                                                      :EXTRA NIL
+                                                                                                                      :TRANSFORM-DEFAULT T)
+                                                                                                                   #S(PGLOADER.CATALOG:COLUMN
+                                                                                                                      :TABLE NIL
+                                                                                                                      :NAME "hire_date"
+                                                                                                                      :TYPE-NAME #8#
+                                                                                                                      :TYPE-MOD NIL
+                                                                                                                      :NULLABLE NIL
+                                                                                                                      :DEFAULT NIL
+                                                                                                                      :COMMENT NIL
+                                                                                                                      :TRANSFORM NIL
+                                                                                                                      :EXTRA NIL
+                                                                                                                      :TRANSFORM-DEFAULT T))
+                                                                                                     :INDEX-LIST NIL
+                                                                                                     :FKEY-LIST NIL
+                                                                                                     :TRIGGER-LIST NIL
+                                                                                                     :CITUS-RULE NIL))
+                                                                                     :VIEW-LIST NIL
+                                                                                     :MATVIEW-LIST NIL
+                                                                                     :EXTENSION-LIST NIL
+                                                                                     :SQLTYPE-LIST NIL)
+                                                                       :TYPE :ENUM
+                                                                       :SOURCE-DEF #7#
+                                                                       :EXTRA ("M"
+                                                                               "F")
+                                                                       :EXTENSION NIL) which is not the same as "employees_gender", the type of current target database column "employees"."employees"."gender".
+2026-09-28T22:53:22.043477Z LOG report summary reset
+             table name     errors       rows      bytes      total time
+-----------------------  ---------  ---------  ---------  --------------
+        fetch meta data          0          2                     0.164s
+      Drop Foreign Keys          0          0                     0.000s
+               Truncate          0          2                     0.000s
+-----------------------  ---------  ---------  ---------  --------------
+    employees.employees          0     300024    13.2 MB          0.528s
+  employees.departments          0          9     0.1 kB          0.060s
+-----------------------  ---------  ---------  ---------  --------------
+COPY Threads Completion          0          4                     0.528s
+        Reset Sequences          0          0                     0.064s
+    Create Foreign Keys          0          0                     0.000s
+       Install Comments          0          0                     0.000s
+-----------------------  ---------  ---------  ---------  --------------
+      Total import time          ✓     300033    13.2 MB          0.592s

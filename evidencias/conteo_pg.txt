@@ -1,0 +1,10 @@
+    tabla     |  filas  
+--------------+---------
+ departments  |       9
+ dept_emp     |  331603
+ dept_manager |      24
+ employees    |  300024
+ salaries     | 2844047
+ titles       |  443308
+(6 filas)
+

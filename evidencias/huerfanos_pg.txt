@@ -1,0 +1,10 @@
+         relacion         | huerfanos 
+--------------------------+-----------
+ dept_emp→employees       |         0
+ dept_emp→departments     |         0
+ dept_manager→employees   |         0
+ dept_manager→departments |         0
+ salaries→employees       |         0
+ titles→employees         |         0
+(6 filas)
+
